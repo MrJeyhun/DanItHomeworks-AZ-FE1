@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+.r-border {
+  border-right: 3px solid rgba(0, 0, 0, 0.07);
+}
+
+.bgcol--dark {
+  background-color: #e3e3e3;
+}
+
+.bgcol--light {
+  background-color: #f2f2f2;
+}
+
+.bgcol-dark--button {
+  background-color: #dddddd;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3a4965;
+}
+
+td {
+  vertical-align: middle;
+}
+
+.table {
+  font-family: "Arimo", sans-serif;
+  font-size: 16px;
+  color: #484848;
+  text-align: center;
+  margin: auto 10vw;
+}
+
+.table-name {
+  background-color: #fafafa;
+  width: 308px;
+  font-size: 18px;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.table-name--big {
+  font-size: 30px;
+}
+
+.standard-plan {
+  height: 71px;
+  width: 278px;
+  font-size: 24px;
+  background-color: #89c331;
+  color: white;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.ultimate-plan {
+  height: 71px;
+  width: 280px;
+  font-size: 30px;
+  background-color: #f04a56;
+  color: white;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.premium-plan {
+  height: 71px;
+  width: 278px;
+  font-size: 24px;
+  background-color: #20807c;
+  color: white;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.price-big {
+  display: flex;
+  height: 87px;
+  font-size: 60px;
+  font-weight: 700;
+  background-color: #fafafa;
+  padding-top: 15px;
+  padding-left: 30px;
+}
+
+.price-small {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+.pricetext-permonth {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.service {
+  height: 70px;
+}
+
+.svg-icons {
+  height: 20%;
+  width: 20%;
+}
+
+.button-grey,
+.button-red,
+.button-blue,
+.button-green {
+  height: 50px;
+  width: 193px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 1px 1px #3a4965;
+  margin: 30px;
+}
+
+.button-grey:hover,
+.button-red:hover,
+.button-blue:hover,
+.button-green:hover {
+  box-shadow: 0 0 0 0;
+  transform: translateY(2px);
+  transition: 0.1s linear;
+}
+
+.bgcol--light button {
+  color: #ffffff;
+}
+
+.button-blue {
+  background-color: #20807c;
+}
+
+.button-green {
+  background-color: #89c331;
+}
+
+.button-grey {
+  background-color: #484848;
+}
+
+.button-red {
+  background-color: #f04a56;
+}

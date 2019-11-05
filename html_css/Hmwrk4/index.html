@@ -40,7 +40,7 @@
         <form class="form">
           <div class="form-heading">
             <h3>Sign Up</h3>
-            <a href="#">Log In</a>
+            <a class="logIn-bg" href="#">Log In</a>
           </div>
           <div class="social-btns">
             <a href="#" class="social-btn facebook-btn"
@@ -54,34 +54,40 @@
           </div>
           <span class="separator">or</span>
           <div class="form-group">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input type="text" name="name" class="inputs" placeholder="Name" />
             <input
               type="text"
               name="lastname"
-              id="lastname"
+              class="inputs"
               placeholder="Last Name"
             />
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              class="inputs"
+              placeholder="Email"
+            />
             <input
               type="password"
               name="password"
-              id="password"
+              class="inputs"
               placeholder="Choose Password"
             />
             <input
               type="password"
               name="confirm_password"
-              id="confirm_password"
+              class="inputs"
               placeholder="Confirm Password"
             />
             <input type="checkbox" name="gdpr_agree" id="gdpr_agree" />
             <label for="gdpr_agree" id="gdpr_agree_id">
-              Agree our <a href="#">Terms & Conditions</a>
+              Agree our <a href="#" id="termsLink">Terms & Conditions</a>
             </label>
-            <input type="submit" value="Create Account" />
+            <input type="submit" id="submit" value="Create Account" />
           </div>
         </form>
       </div>
     </main>
   </body>
 </html>
+

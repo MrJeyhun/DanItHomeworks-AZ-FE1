@@ -44,7 +44,7 @@ header .container {
   padding: 0;
 }
 
-.icons__list i {
+.icons__list .far {
   height: 20px;
   width: 30px;
   margin-right: 25px;
@@ -53,7 +53,7 @@ header .container {
   color: white;
 }
 
-.icons__list i:hover {
+.icons__list .far:hover {
   color: #6ae678;
 }
 
@@ -65,10 +65,7 @@ header .container {
 .login-text a {
   color: #3cb878;
 }
-.login-text a:hover {
-  text-decoration: underline;
-  text-underline-position: under;
-}
+
 .form {
   position: relative;
   display: block;
@@ -99,17 +96,13 @@ header .container {
   align-items: baseline;
   margin-bottom: 15px;
 }
-.form-heading h3 {
+.form-heading #formHead {
   margin: 0;
   color: #434343;
 }
-.form-heading a {
+.logIn-bg {
   color: #3cb878;
-  text-decoration: none;
-}
-.form-heading a:hover {
   text-decoration: underline;
-  text-underline-position: under;
 }
 
 .social-btns {
@@ -117,7 +110,7 @@ header .container {
   justify-content: space-between;
 }
 
-.social-btns a {
+.social-btns .social-btn {
   height: 50px;
   width: 190px;
   margin-top: 20px;
@@ -136,7 +129,7 @@ header .container {
   margin-left: 5px;
 }
 
-.social-btns i {
+.social-btns .fab {
   padding-top: 15px;
   padding-left: 15px;
   text-decoration: none;
@@ -144,8 +137,8 @@ header .container {
   color: white;
 }
 
-.social-btns a,
-p {
+.social-btns .social-btn,
+.webSiteName {
   font-size: 15px;
   line-height: 25px;
   font-weight: 200;
@@ -153,6 +146,7 @@ p {
 }
 
 .separator {
+  display: block;
   position: relative;
   text-align: center;
   color: #848484;
@@ -181,9 +175,7 @@ p {
   display: flex;
   flex-direction: column;
 }
-input[type="text"],
-input[type="email"],
-input[type="password"] {
+.inputs {
   width: 100%;
   padding: 15px 18px;
   border-radius: 3px;
@@ -193,14 +185,14 @@ input[type="password"] {
   margin-bottom: 10px;
   transition: margin-bottom 0.4s, margin-top 0.4s;
 }
-input::placeholder {
+.inputs::placeholder {
   color: #eaeaea;
   font-size: 14px;
 }
 
-input[type="text"]:focus,
-input[type="email"]:focus,
-input[type="password"]:focus {
+.inputs:focus,
+.inputs:focus,
+.inputs:focus {
   box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.21);
   margin-top: 15px;
   margin-bottom: 15px;
@@ -208,11 +200,13 @@ input[type="password"]:focus {
   color: black;
   border-color: teal;
 }
-input[type="checkbox"] {
+
+#gdpr_agree {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
+
 #gdpr_agree_id {
   position: relative;
   color: #434343;
@@ -222,7 +216,7 @@ input[type="checkbox"] {
   margin-bottom: 30px;
   cursor: pointer;
 }
-#gdpr_agree_id a {
+#termsLink {
   color: #3cb878;
   text-decoration: underline;
   text-underline-position: under;
@@ -252,10 +246,10 @@ input[type="checkbox"] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
-input[type="checkbox"]:checked ~ #gdpr_agree_id::after {
+#gdpr_agree:checked ~ #gdpr_agree_id::after {
   display: block;
 }
-input[type="submit"] {
+#submit {
   color: #ffffff;
   font-size: 16px;
   border-radius: 3px;
@@ -265,6 +259,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
 }
-input[type="submit"]:hover {
+#submit:hover {
   background-color: #329a65;
 }
+

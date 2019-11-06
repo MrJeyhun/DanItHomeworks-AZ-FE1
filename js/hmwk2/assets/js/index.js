@@ -41,21 +41,29 @@ let showPrimes = () => {
 showPrimes();
 
 // simple version
-let divisibleBy_5 = () => {
+let getAndCheck = () => {
   //ask a number from user
-  var num = prompt("Type a number");
-  if (num.startsWith(0)) {
-    console.log("Sorry, no numbers");
-    divisibleBy_5();
-  } else if (num != +num) {
-    alert("You didn't enter integer, try again");
-    divisibleBy_5();
+  let status;
+  while (!status) {
+    var num = prompt("Type a number");
+    if (num.startsWith(0)) {
+      alert("Sorry, no numbers");
+      status = "";
+    } else if (num != +num) {
+      alert("You didn't enter integer, try again");
+      status = "";
+    } else {
+      break;
+    }
   }
+  showDivisibleByFive(num);
+};
 
+let showDivisibleByFive = num => {
   for (var i = 1; i < +num; i++) {
     if (i % 5 == 0) {
       console.log(i);
     }
   }
 };
-//divisibleBy_5();
+// console.log(getAndCheck());

@@ -40,14 +40,52 @@ function createNewUser(newUser) {
     //getting age of user
     getAge: function() {
       let year = new Date().getFullYear();
+      var month = new Date().getMonth();
+      //set it as a normal format (not january as 0);
+      month += 1;
+      let day = new Date().getDate();
+      //get year from string
       let birthYear = this.dateOfBirth.slice(6, 10);
+      //get month from string
+      var birthMonth = this.dateOfBirth.slice(3, 5);
+      //check first character 0 or not
+      var firstcharOfMonth = birthMonth.charAt(0);
+      //if it's zero, cut and get it after zero
+      if (firstcharOfMonth == 0) {
+        birthMonth = birthMonth.substring(1);
+      }
+      //get birthday from string
+      var birthday = this.dateOfBirth.slice(0, 2);
+      //check first character 0 or not
+      var firstcharOfDay = birthday.charAt(0);
+      //if it's zero, cut and get it after zero
+      if (firstcharOfDay == 0) {
+        birthday == birthday.substring(1);
+      }
+      //calculate age with difference between years
       let age = +year - +birthYear;
+      //calculate age again, but consider months and days
+      if (+birthMonth >= +month) {
+        if (+birthday >= +day) {
+          age -= 1;
+        }
+      }
       return age;
+    },
+    //setting password for user
+    setPassword: function() {
+      let userPassword;
+      let year = this.dateOfBirth.slice(6, 10);
+      userPassword =
+        this.firstname.charAt(0).toUpperCase() +
+        this.lastname.toLowerCase() +
+        year;
+      return userPassword;
     }
   };
 }
 //create user info as object
-let newUser = new createNewUser();
+var newUser = new createNewUser();
 //calling login method
 console.log(newUser.getLogin());
 //calling a method for setting date of birth

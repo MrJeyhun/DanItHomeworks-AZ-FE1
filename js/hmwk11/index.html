@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BITMAN CONTROL</title>
+    <style>
+      body {
+        background: #bdc3c7; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2c3e50,
+          #bdc3c7
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2c3e50,
+          #bdc3c7
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .btn-container {
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .btn {
+        border: none;
+        border-radius: 50%;
+        min-width: 120px;
+        padding: 7px;
+        color: #fff;
+        font-size: 14px;
+        background-color: #000000;
+        cursor: pointer;
+      }
+      .btn:active,
+      .btn:focus {
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-container">
+      <button class="btn">Enter</button>
+      <button class="btn">B</button>
+      <button class="btn">I</button>
+      <button class="btn">T</button>
+      <button class="btn">M</button>
+      <button class="btn">A</button>
+      <button class="btn">N</button>
+    </div>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

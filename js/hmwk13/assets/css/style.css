@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: auto;
+  height: 100vh;
+}
+
+.bg-color-default {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-color-femine {
+  background: #ee9ca7; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffdde1,
+    #ee9ca7
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.image-to-show {
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+
+.images-wrapper {
+  display: flex;
+  height: 90vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.active {
+  display: block;
+  border-radius: 25%;
+  animation-name: fadeOut;
+  animation-duration: 1s;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transition: opacity 0.5s ease-out;
+  }
+}
+
+.fas {
+  justify-content: space-around;
+  align-self: center;
+}
+
+.fa-pause-circle {
+  height: 10vh;
+  cursor: pointer;
+}
+
+.pause-default {
+  color: rgb(197, 9, 9);
+}
+
+.pause-femine {
+  color: rgb(173, 105, 116);
+}
+
+.fa-pause-circle:active {
+  transform: translateY(4px);
+}
+
+.fa-play {
+  height: 10vh;
+  cursor: pointer;
+}
+
+.play-default {
+  color: rgb(23, 201, 23);
+}
+
+.play-femine {
+  color: rgb(173, 105, 116);
+}
+
+.fa-play:active {
+  transform: translateY(4px);
+}
+
+.fa-venus {
+  height: 10vh;
+  cursor: pointer;
+  color: rgb(173, 105, 116);
+}
+
+.fa-venus:active {
+  transform: translateY(4px);
+}
+
+.fa-mars {
+  height: 10vh;
+  cursor: pointer;
+  color: blue;
+}
+
+.fa-mars:active {
+  transform: translateY(4px);
+}

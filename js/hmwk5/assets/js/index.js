@@ -3,12 +3,12 @@ function createNewUser(newUser) {
   //ask for name and surname
   let name = prompt("Give me your name dude! ");
   let surname = prompt("and your surname");
-  let birtDay;
+  let birth;
   //return object
   return {
     firstname: name,
     lastname: surname,
-    dateOfBirth: birtDay,
+    dateOfBirth: birth,
     getLogin: function() {
       //return as abb
       return (
@@ -43,11 +43,14 @@ function createNewUser(newUser) {
       var month = new Date().getMonth();
       //set it as a normal format (not january as 0);
       month += 1;
-      let day = new Date().getDate();
+      console.log(month + " month");
+      var day = new Date().getDate();
+      console.log(day);
       //get year from string
-      let birthYear = this.dateOfBirth.slice(6, 10);
+      var birthYear = this.dateOfBirth.slice(6, 10);
       //get month from string
       var birthMonth = this.dateOfBirth.slice(3, 5);
+      console.log(birthMonth + " birhtmonth");
       //check first character 0 or not
       var firstcharOfMonth = birthMonth.charAt(0);
       //if it's zero, cut and get it after zero
@@ -60,15 +63,16 @@ function createNewUser(newUser) {
       var firstcharOfDay = birthday.charAt(0);
       //if it's zero, cut and get it after zero
       if (firstcharOfDay == 0) {
-        birthday == birthday.substring(1);
+        birthday = birthday.substring(1);
       }
       //calculate age with difference between years
-      let age = +year - +birthYear;
+      var age = +year - +birthYear;
       //calculate age again, but consider months and days
-      if (+birthMonth >= +month) {
-        if (+birthday >= +day) {
-          age -= 1;
-        }
+      console.log(birthday);
+      if (+birthMonth > +month) {
+        age -= 1;
+      } else if (+birthMonth <= +month && +birthday >= day) {
+        age -= 1;
       }
       return age;
     },

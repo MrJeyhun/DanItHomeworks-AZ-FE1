@@ -4,8 +4,10 @@
     <meta charset="utf-8" />
     <title>Donate us!</title>
     <style>
-      .price {
-        border: 2px solid green;
+      #header {
+        font-size: 54px;
+        font-weight: 800;
+        color: lightgreen;
       }
       .container {
         display: flex;
@@ -19,25 +21,37 @@
         width: 100%;
         text-align: center;
       }
-      #priceInput {
-        color: green;
-      }
       .deactive {
         display: none;
       }
       .active {
         display: block;
+      }
+      .default-col {
         color: lime;
       }
+      .warning-col {
+        color: red;
+      }
+      .pI-default {
+        color: green;
+        /* border-color: none; */
+      }
+      .pI-warning {
+        border: 2px solid rgb(255, 0, 0);
+        color: rgb(255, 0, 0);
+      }
+      .pI-focus {
+        border: 2px solid rgb(0, 218, 0);
+      }
       #btn {
-        background-color: lime;
         border-radius: 50%;
       }
-
-      #header {
-        font-size: 54px;
-        font-weight: 800;
-        color: lightgreen;
+      .btn-default {
+        background-color: lime;
+      }
+      .btn-warning {
+        background-color: rgb(255, 0, 0);
       }
     </style>
   </head>
@@ -45,14 +59,15 @@
   <body>
     <span id="header">DONATE US DUDE!</span>
     <div class="container">
-      <div class="tools deactive">
-        <label for="inptText" id="inputtext"
+      <div class="tools deactive ">
+        <label for="inptText" class="inputtext default-col"
           >Current value: 25000000000000000000000000000000000</label
         >
+
         <button id="btn">X</button>
       </div>
 
-      <input type="number" id="priceInput" placeholder="Price" />
+      <input type="number" class="priceInput pI-default" placeholder="Price" />
     </div>
 
     <script src="./assets/js/index.js"></script>

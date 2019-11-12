@@ -1,0 +1,78 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.main {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  user-select: none;
+}
+
+.wrapper {
+  justify-content: center;
+  align-content: center;
+  border: 2px solid purple;
+  box-shadow: 10px 5px 5px rgba(8, 46, 216, 0.897);
+  width: 590px;
+  height: 400px;
+  margin-top: 0px;
+  background: #1f4037; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #99f2c8,
+    #1f4037
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #99f2c8,
+    #1f4037
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.tabs-list {
+  display: flex;
+  margin-top: 0;
+  width: 100%;
+}
+
+.tabs {
+  padding: 20px;
+  background-color: #f300f3;
+  color: #6a5cff;
+  cursor: pointer;
+}
+
+.tabs.active {
+  background-color: #441253;
+  color: #0c84ca;
+}
+.contents {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+.activecontent {
+  display: block;
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Architect</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <!--Reset.css-->
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <!--Styling-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--Lobster Font-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome CDN-->
+    <script
+      src="https://kit.fontawesome.com/ee4f7cdaa4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="brand">
+        <div class="logo-l">
+          <img src="./assets/img/logo-img.png" alt="logo" class="logo-img" />
+        </div>
+        <span class="brand-name">Architect</span>
+      </div>
+
+      <div class="navbar-wrapper">
+        <nav>
+          <ul class="navbar">
+            <li class="nav-items"><a class="links" href="#">home</a></li>
+            <li class="nav-items">
+              <a class="links" href="#mostSec">most popular</a>
+            </li>
+            <li class="nav-items">
+              <a class="links" href="#clientsSec">clients</a>
+            </li>
+            <li class="nav-items">
+              <a class="links" href="#ratedSec">top rated</a>
+            </li>
+            <li class="nav-items"><a class="links" href="#newsSec">news</a></li>
+            <li class="nav-items">
+              <a class="links" href="#footerSec">contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="search-button-wrapper">
+        <button type="submit" class="search-button">
+          <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="btns">
+        <p class="btns--header">The latest news on design & architecture</p>
+        <a class="btns-links btns-links--subscribe" href="#">Subscribe Now</a>
+        <a class="btns-links btns-links--article" href="#">Best Articles</a>
+      </section>
+
+      <section class="top-content">
+        <p class="content--h">Most popular posts</p>
+        <div class="img-wrapper">
+          <div class="img-container" id="mostSec">
+            <img src="./assets/img/post-1-img.png" alt="" />
+            <span class="img-text">Vanglo House by LWPAC in Canada</span>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/post-2-img.png" alt="" />
+            <span class="img-text">Sunrise Expanse Hotel in USA</span>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/post-3-img.png" alt="" />
+            <span class="img-text">Stargaze Resort & SPA in USA</span>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/post-4-img.png" alt="" />
+            <span class="img-text">Royal Blossom Hotel & SPA in USA</span>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/post-5-img.png" alt="" />
+            <span class="img-text">Sunset Shack Hotel in Spain</span>
+          </div>
+          <div class="img-container">
+            <img src="./assets/img/post-6-img.png" alt="" />
+            <span class="img-text">Glorius Expanse Hotel in France</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="customers">
+          <p class="customers--h " id="clientsSec">OUR MOST POPULAR CLIENTS</p>
+          <hr class="h-line" />
+          <span class="logo-1 customers-logo"></span>
+          <span class="logo-2 customers-logo"></span>
+          <span class="logo-3 customers-logo"></span>
+          <span class="logo-4 customers-logo"></span>
+        </div>
+      </section>
+      <div class="rated-slide">
+        <button class="slide-btn" id="ratedSec">Top Rated</button>
+      </div>
+      <section class="rated" style="display: none;">
+        <p class="content--h">Top rated</p>
+        <div class="top-rated-container">
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-1-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-2-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-3-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-4-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-5-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-6-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+          <span class="top-rated-imgs">
+            <img
+              src="./assets/img/latest-post-7-img@1X.png"
+              alt="latest posts"
+            />
+          </span>
+        </div>
+      </section>
+
+      <section class="hotnews">
+        <p class="content--h">Hot news</p>
+        <div class="htnews-content-wrap">
+          <div class="htnews-container" id="newsSec">
+            <div class="news box1 horinzontal-block">
+              <img
+                src="./assets/img/post-1-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">Prophecy Hotel & Spa in Emirate</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+            <div class="news box2">
+              <img
+                src="./assets/img/post-2-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title title-centered">Nebula hotel in Spain</h4>
+              </div>
+            </div>
+            <div class="news box3">
+              <img
+                src="./assets/img/post-3-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">Western Pyramid Resort in Egypt</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+            <div class="news box4">
+              <img
+                src="./assets/img/post-4-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">Grand Meadows Resort in Maldives</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+            <div class="news box5">
+              <img
+                src="./assets/img/post-5.1-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">Wanderlust Resort in Tenerife</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+            <div class="news box6">
+              <img
+                src="./assets/img/post-6-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">Twin Sanctuary Hotel in Great Bri-</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+            <div class="news box7">
+              <img
+                src="./assets/img/post-7-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title title-centered">
+                  Prism Hotel in Ireland
+                </h4>
+              </div>
+            </div>
+            <div class="news box8 horinzontal-block">
+              <img
+                src="./assets/img/post-8-img@1X.png"
+                alt=""
+                class="news-image"
+              />
+              <div class="news-content">
+                <h4 class="news-title">King's Shroud Resort in Spain</h4>
+                <p class="news-paragraph">
+                  Amazing Gabion Ideas for Outdoors A Gabion is a cage box or
+                  cylinder filled with rocks, concrete, or sometimes sand and
+                  soil and It is a great way to decorate your outdoor. Amazing
+                  Gabion Ideas for Outdoors A Gabion is a cage box or cylinder
+                  filled with rocks, concrete, or sometimes sand and soil and It
+                  is a great way to decorate your outdoor
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="footerSec">
+      <div class="footer-grid">
+        <p class="footer-text">
+          All Rights Reserved &copy; 2014 architect.com - Interior Design &
+          Architecture Magazine<br/ >Tel: +994708754140 / Email:
+          ceyhun.zade1998@gmail.com
+        </p>
+        <div class="footer-img">
+          <img src="./assets/img/liot-logo.png" alt="liot logo" />
+          <span class="footer-logo--text">liot</span>
+        </div>
+      </div>
+    </footer>
+    <a href="#" class="scrollTop" style="display: none;"
+      ><i class="fas fa-chevron-circle-up fa-3x" aria-hidden="true"></i
+    ></a>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>

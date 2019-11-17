@@ -1,20 +1,20 @@
 $(function() {
   //access all tabs
-  const tabs = $(".tabs-list");
+  const tabs = $(".tabs");
   //access all contents
-  const content = $(".contents");
+  const contents = $(".contents");
   //hide all contents
-  $(content).hide();
+  $(contents).hide();
   //display first content of active tab (tab which has active class)
-  $(content[0]).show();
+  $(contents[0]).show();
   //set event handler for every tabs
-  tabs.on("click", ".tabs", function() {
+  tabs.click(e => {
     //remove active class from previous and set it to clicked tab
     $(".active").removeClass("active");
-    $(this).addClass("active");
+    $(e.target).addClass("active");
     //hide content of previous tab
-    $(content).hide();
+    $(contents).hide();
     //display content of clicked tab
-    $(content[$(this).index()]).css("display", "block");
+    $(contents[$(e.target).index()]).css("display", "block");
   });
 });
